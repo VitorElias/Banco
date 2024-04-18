@@ -18,14 +18,12 @@ public class Conta {
 
     }
 
-    public boolean saque(double valor) {
+    public void saque(double valor) {
 
-        if(valor < this.saldo+5.0) {
+        if (valor < this.saldo + 5.0) {
 
-            this.saldo -= (valor+5.0);
-            return true;
+            this.saldo -= (valor + 5.0);
         }
-        return false;
     }
 
     public void depositar(double valor) {
